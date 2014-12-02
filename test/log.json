@@ -1,0 +1,36 @@
+{
+  "appenders": [
+    {
+      "type": "dateFile",
+      "filename": "logA",
+      "pattern": "-yyyy-MM-dd hh.log",
+      "alwaysIncludePattern": true,
+      "category": "express"
+    },
+    {
+      "type": "file",
+      "absolute": false,
+      "filename": "log_file.log",
+      "maxLogSize": 20480,
+      "backups": 10,
+      "category": "file-logger"
+    },
+    {
+      "type": "console",
+      "layout": {
+        "type": "pattern",
+        "pattern": "[%d] [%p] %c - %m"
+      }
+    }
+  ],
+
+  "levels": {
+    "[all]": "TRACE",
+    "express": "ERROR",
+    "file-logger": "TRACE"
+  },
+
+  "replaceConsole": false,
+
+  "cwd": "./logs"
+}

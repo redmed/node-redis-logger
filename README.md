@@ -1,4 +1,6 @@
-node_demo
-=========
+Node-demo docs Index
+===
 
-node demo
+* [Redis-Cache](./doc/redis-cache.md "Redis-Cache doc")
+
+* [Logger](./doc/logger.md "Logger doc")
