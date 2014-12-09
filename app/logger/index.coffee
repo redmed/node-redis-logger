@@ -64,3 +64,6 @@ exports.getLogger = ( category, errorLevel ) ->
         logger.setLevel( errorLevel )
 
     logger
+
+exports.connectLogger = ( logger, options ) ->
+    log4js.connectLogger( logger, options )
